@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('pexels-photo-6331082.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.app-container{
+    width: 60vw;
+    /* border: 1px solid rgb(39, 2, 57); */
+    margin: 50px auto;
+}
+.app-head{
+    border-bottom: 1px solid rgb(39, 2, 57);
+    background-color:rgb(39, 2, 57) ;
+}   
+.app-head h1{
+    color: #fff;
+    text-align: center;
+}
+.app-body{
+    border:1px solid rgb(39, 2, 57) ;
+}
+.user-list-container{
+    width: 50vw;
+    margin: 0 auto;
+    border: 1px solid silver;
+}
+.user-list-container .card .card-header{
+    background-color:rgba(192, 192, 192, 0.3) ;
+    border-bottom: 1px solid silver;
+}
+
+.card-header h3{
+    justify-content: center; 
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.user-list-container .card .card-body .row{
+    width: 100%;
+    display: flex;
+    margin: 25px 50px;
+}
+.user-list-container .card .card-body .row .col{
+    width: 40%;
+}
+.feed-right{
+    justify-content: end;
+    text-align: end;
+    float: right;
+}
+.feed-age-section{
+    margin-top: 25px;
+}
+
+@media screen and (max-width:760px) {
+    .user-list-container{
+        padding-bottom: 115px;
+    }
+    .feed-right{
+        text-align: start;
+    }
+    .user-list-container .card .card-body .row{ 
+        display:block;
+        width: 50%;
+        height: 50vh;
+        margin: 20px 25px; 
+    } 
+    .user-list-container .card .card-body .row .col {
+        width: 100%;
+    }
+}
